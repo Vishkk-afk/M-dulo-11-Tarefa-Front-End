@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Agência Criativa Web</title>
+</head>
+
+<body class="container">
+    <header>
+        <nav>
+            <ul class="secao">
+                <li><a onclick="mostrarMenu('home');">Home</a></li>
+                <li><a onclick="mostrarMenu('sobre-nos');">Sobre Nós</a></li>
+                <li><a onclick="mostrarMenu('servicos');">Serviços</a></li>
+                <li><a onclick="mostrarMenu('depoimentos');">Depoimentos</a></li>
+                <li><a onclick="mostrarMenu('contato');">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <sidebar class="carrinho">
+        <p>Meu Carrinho<i class="bi bi-cart4 compra"></i></p>
+        <ul>
+            <li><a><i class="bi bi-person-circle"></i></a>Conta</li>
+            <li><a><i class="bi bi-wallet2"></i></a>Carteira</li>
+        </ul>
+    </sidebar>
+    <aside>
+        <img src="Anuncios/AnuncioComputaodor.png" srcset="/Anuncios/AnuncioCelular.png 600w, /Anuncios/AnuncioTablet.png 1200w, /Anuncios/AnuncioComputador.png 1800w" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+    </aside>
+    <main>
+        <section id="home" class="menu homeAjuste">
+            <img src="/Logos/banner.png" alt="banner">
+            <p> Olá usuário Seja Bem-vindo à nossa Agência Criativa Web! Nos conheça mais na seção 'Sobre Nós' e conheça
+                a melhor Agência de Web Criativa do Brasil! </p>
+            <p> O valor do nossos serviço é o diferencial no mercado atual!</p>
+        </section>
+        <section id="sobre-nos" class="menu sobre-nosAjuste" style="display: none;">
+
+            <h2>Agência Web Criativa<img src="/Logos/logo.png" alt="logo ACW" class="logo"></h2>
+            <p>A Web Criativa foi criada para ajudar empresas que necessita de um site para a divulgação de seus
+                serviços, com os serviços que prestamos, daremos aos nossos clientes o melhor!</p>
+            <p>Nossos Valores:</p>
+            <ul>
+                <li>Dar 100% de Satisfação com os serviços</li>
+                <li>Qualidade Web com especialistas qualificados na área</li>
+                <li>Ser reconhecido como o melhor Agência do Brasil</li>
+            </ul>
+        </section>
+        <section id="servicos" class="menu layout" style="display: none;">
+            <ul>
+                <li>Desenvolvimento Web Básico - R$1000,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Desenvolvimento Web Intermédio - R$2999,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Desenvolvimento Web Avançado - R$5999,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Desenvolvimento Web Especialista - R$9000,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Designer Gráfico Básico/Intermediário - R$3999,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Designer Gráfico Avançado/Especialista - R$7999,00<a><i class="bi bi-cart-plus"></i></a></li>
+                <li>Branding - R$3500,00<a><i class="bi bi-cart-plus"></i></a></li>
+            </ul>
+        </section>
+        <section id="depoimentos" class="menu comentarios" style="display: none;">
+            <div class="comentariosPerfil1">
+                <h5><img src="/Desconhecido/Pessoa1.png" alt="perfil1">Rosângela Nascimento</h5>
+                <p class="ballon1">Eu amei fazer os serviços com a Agência Web Criativa! Eu recomendo!</p>
+            </div>
+            <div class="comentariosPerfil2">
+                <h5><img src="/Desconhecido/Pessoa2.png" alt="perfil2">Katllen Ferreira</h5>
+                <p class="ballon2">Que experiência maravilhosa que tive com essa Agência e com os profissionais!
+                    Parabéns!</p>
+            </div>
+            <div class="comentariosPerfil3">
+                <h5><img src="/Desconhecido/Pessoa3.png" alt="perfil2">Edson Fernandes</h5>
+                <p class="ballon3">Boa Tarde! Só queria comentar o quanto eu curti o serviços de vocês e pelo ótimos
+                    profissionais que têm! Meus parabéns e recomendo muito!</p>
+            </div>
+        </section>
+        <section id="contato" class="menu help" style="display: none;">
+            <br>
+            <h2>Com Dúvidas? Entre em contato!</h2>
+            <ul>
+                <li><i class="bi bi-geo-alt"></i> Endereço: Rua Otávio Oliveira - Jardim Matarazzo - 1099</li>
+                <li><i class="bi bi-telephone"></i> Telefone: 12 2789-0464</li>
+                <li><i class="bi bi-envelope"></i> E-mail: agenciacriativaweb100@outlook.com</li>
+            </ul>
+            <form class="formulario">
+                <textarea name="formulario" id="questao" placeholder="Digite sua Dúvida"></textarea>
+            </form>
+            <button class="btn" type="button">Enviar</button>
+
+        </section>
+    </main>
+    <footer>
+        <p class="rodape">Todos os Direitos &copy - 2025 Agência Criativa Web</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
